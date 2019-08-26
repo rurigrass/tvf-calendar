@@ -1,0 +1,31 @@
+td,
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+.Day,
+.EmptySlot,
+.Weekday {
+  text-align: center;
+  height: 50px;
+}
+
+.SelectedDay {
+  text-align: center;
+  height: 50px;
+  background-color: peru;
+}
+.SelectedDay:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.Day:hover {
+  cursor: pointer;
+  color: darkorange;
+}
+
+.Weekday {
+  font-size: 0.8em;
+}
