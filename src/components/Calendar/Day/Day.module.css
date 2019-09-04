@@ -1,12 +1,7 @@
-td,
-tr {
-  padding: 0;
-  margin: 0;
-}
-
 .Day,
-.EmptySlot,
-.Weekday {
+/* .EmptySlot, */
+.Weekday 
+{
   text-align: center;
   height: 50px;
 }

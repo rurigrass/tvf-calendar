@@ -1,3 +1,9 @@
+h3 {
+text-align: center;
+border: 2px solid skyblue;
+
+}
+
 .CloseBtn {
     color: #AA9;
     font-weight: bold;
@@ -8,4 +14,13 @@
 
 .CloseBtn:hover {
     color: #AC2500;
+}
+
+.Post {
+    margin: 5px
+}
+
+.Input {
+    text-align: center;
+
 }

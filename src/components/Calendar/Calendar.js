@@ -97,7 +97,7 @@ class Calendar extends Component {
       const dayStyle = posts.length > 0 ? true : false
 
       daysInMonth.push(
-        <Day key={d} day={d} date={date} selectDay={this.daySelector} dayStyle={dayStyle}/>
+        <Day key={d} day={d} date={date} selectDay={this.daySelector} dayStyle={dayStyle} />
       );
     }
 
@@ -138,10 +138,10 @@ class Calendar extends Component {
         <table className={styles.Calendar}>
           <thead>
             <tr className={styles.CalendarHeader}>
-              <td colSpan="5">
-                <span onClick={e => this.prevMonth()}>&#8249;</span>{" "}
+              <td colSpan="7">
+                <span className={styles.LeftArrow} onClick={e => this.prevMonth()}>&#8249;</span>{" "}
                 {this.monthText()}{" "}{this.year()}{" "}
-                <span onClick={e => this.nextMonth()}>&#8250;</span>
+                <span className={styles.RightArrow} onClick={e => this.nextMonth()}>&#8250;</span>
               </td>
             </tr>
           </thead>

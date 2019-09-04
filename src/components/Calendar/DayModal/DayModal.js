@@ -31,7 +31,7 @@ class DayModal extends Component {
     let postList;
     posts !== null
       ? (postList = posts.map(post => (
-          <div key={posts.indexOf(post)}>
+          <li className={styles.Post} key={posts.indexOf(post)}>
             {post.post}
             <span
               className={styles.CloseBtn}
@@ -39,14 +39,14 @@ class DayModal extends Component {
             >
               &times;
             </span>
-          </div>
+          </li>
         )))
       : (postList = null);
     //
     return (
       <div>
         <h3>{this.props.date}</h3>
-        <div>
+        <div className={styles.Input}>
           <input
             placeholder="Write a new post..."
             value={this.state.newPost}
